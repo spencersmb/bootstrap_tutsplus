@@ -2,8 +2,24 @@
 // Vendor - framework libraries
 // Boostrap
 // ==========================================================================
-//@import "/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../bower_components/index";
 
-h1{
-  color:green;
+
+//NAVIGATION
+
+.top-nav {
+  float:none;
+  text-align: center;
+  //padding adjusted for logo in top left
+  padding-right:145px;
+
+  li{
+    display:inline-block;
+    float:none;
+  }
+}
+
+//JUMBOTRON
+.homepage{
+  margin-top:50px;
 }

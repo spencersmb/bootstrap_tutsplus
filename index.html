@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bootstra PSDS tuts</title>
+    <title>Bootstrap PSDS tuts</title>
     <meta name="description" content="A simple landing page made for Tuts+ Premium">
     <meta name="author" content="Adi Purdila">
 
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/application.css"/>
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,9 +27,122 @@
     <!--<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">-->
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">Product Name</a>
+            </div><!--end navbar header-->
+
+            <!--id matches the data-target in the button to link them-->
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+
+                <a class="btn btn-success navbar-btn navbar-right" href="#">Buy now</a>
+
+                <ul class="nav navbar-nav top-nav">
+                    <li><a href="#section-testimonials">Testimonials</a></li>
+                    <li><a href="#section-features">Features</a></li>
+                    <li><a href="#section-gallery">Gallery</a></li>
+                    <li><a href="#section-faq">Faq</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
+                </ul>
+            </div><!--end collapse-->
+
+        </div><!--end container-->
+
+    </nav>
+
+
+
+    <!--BANNER-->
+    <div class="jumbotron homepage">
+        <div class="container text-center">
+            <h1>Great Product Title</h1>
+            <p>In this first exercise lesson we'll create the header and banner for our presentation page.</p>
+
+            <div class="btn-group">
+                <a class="btn btn-lg btn-success" href="">Buy Now!</a>
+                <a class="btn btn-lg btn-default" href="">Try it Free</a>
+            </div><!--end btn-group-->
+        </div><!--end container-->
+    </div><!--end jumbotron-->
+
+
+    <!--TESTIMONIALS-->
+    <div class="container">
+        <section>
+            <!--page header adds padding and a bottom line-->
+            <div class="page-header" id="section-testimonial">
+                <h2>Testimonails. <small>This is what our customers are saying about us.</small></h2>
+            </div><!-- end page header -->
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis delectus et facilis necessitatibus nulla perferendis? Beatae debitis eligendi eveniet!</p>
+                        <footer>Cite Author</footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda consequatur corporis cum facere iusto mollitia nihil porro velit voluptate.</p>
+                        <footer>Cite Author</footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolor expedita nam pariatur quas quibusdam quos rerum sed totam veniam!</p>
+                        <footer>Cite Author</footer>
+                    </blockquote>
+                </div>
+            </div> <!--end row-->
+            
+            <p class="text-center"><em> Wanna tell us about the product? Head over to the contact form.</em></p>
+            <p class="text-center"><a class="btn btn-default" href="#section-contact">Contact Us</a></p>
+        </section>
+
+
+        <!--FEATURES-->
+        <section>
+            <div class="page-header">
+                <h2>Features
+                    <small>What it's all about</small>
+                </h2>
+            </div> <!--end page header-->
+
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3>This is a feature title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, minima, sed. Adipisci dicta facilis id nemo, neque nesciunt quisquam sunt!</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/feature-1.jpg" alt="Feature image" class="img-responsive"/>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+
 
 <!-- JavaScript -->
  	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
